@@ -1,0 +1,38 @@
+.main-chart{
+    display:inline-block;
+    max-width: 30%;
+}
+
+.chart-title{
+    color:white;
+    text-align: center;
+}
+
+.pie-chart{
+    background: #141619;
+    cursor: grab;
+    border: 1px solid #333333;
+}
+
+.charts-section{
+    margin-top: 25px;
+}
+
+.divider{
+    margin-top: 20px;
+    background-color: red;
+    border-radius: 1%;
+    background-color: #e1e5ec;
+}
+
+.divider h2{
+    color: black;
+    margin-bottom: 0px;
+    margin-top: 20px;
+    text-align: center;
+    padding: 10px;
+    border-bottom: 1px solid;
+    border-bottom-color: rgba(0,0,0,.12);
+}
+
+

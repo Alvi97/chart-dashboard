@@ -1,0 +1,58 @@
+<div>
+    <br>
+    <mat-card>
+        <section class="mat-typography">
+            <h3>Add new Employee</h3>
+        </section>
+        <mat-divider></mat-divider>
+
+        <form [formGroup] = "createForm" class="create-form">
+
+
+            <mat-form-field class="field-full-width">
+                <span class="input-name">Emri:</span>
+                <input matInput="emri" formControlName="emri" #emri>
+            </mat-form-field>
+
+            <mat-form-field class="field-full-width">
+                <span class="input-name">Mbiemri:</span>
+                <input matInput="mbiemri" formControlName="mbiemri" #mbiemri>
+            </mat-form-field>
+
+            <mat-form-field class="field-full-width">
+                <span class="input-name">Mosha:</span>
+                <input matInput="mosha" formControlName="mosha" #mosha>
+            </mat-form-field>
+
+            <mat-form-field class="field-full-width">
+                <span class="input-name">Origjina:</span>
+                <input matInput="origjina" formControlName="origjina" #origjina>
+            </mat-form-field>
+
+            <mat-form-field class="field-full-width">
+                <span class="input-name">Paga:</span>
+                <input matInput="paga" formControlName="paga" #paga>
+            </mat-form-field>
+
+            <mat-form-field>
+                <span class="input-name">Gjinia:</span>
+                <select matNativeControl required matInput="gjinia" formControlName="gjinia" #gjinia>
+                  <option value="mashkull">Mashkull</option>
+                  <option value="femer">Femer</option>
+ 
+                </select>
+              </mat-form-field>
+
+
+            <mat-form-field class="field-full-width">
+                <span class="input-name">Eksperienca ne vite:</span>
+                <input matInput="eksperienca" formControlName="eksperienca" #eksperienca>
+            </mat-form-field>
+            <br>
+            <br>
+            <button mat-raised-button color="accent" routerLink="/">Back</button>
+            <button mat-raised-button color="primary" type="submit"  (click)="addPeople(emri.value,mbiemri.value,mosha.value,origjina.value,paga.value,gjinia.value,eksperienca.value)">Add</button>
+            
+        </form>
+    </mat-card>
+</div>

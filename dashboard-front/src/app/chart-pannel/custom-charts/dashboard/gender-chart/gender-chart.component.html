@@ -1,0 +1,15 @@
+<h2 class="chart-title">The gender distribution in the company</h2>
+<div *ngIf="storegender.length == 0 ">
+  <h2 class="chart-title">Waiting for data...</h2>
+</div>
+
+<div style="display: block" *ngIf="storegender">
+
+    <canvas baseChart
+            [data]="doughnutChartData"
+            [labels]="doughnutChartLabels"
+            [chartType]="doughnutChartType"
+            [plugins]="pieChartPlugins"
+            [colors]="pieChartColors"></canvas>
+  </div>
+  

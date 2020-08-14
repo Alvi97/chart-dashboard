@@ -1,0 +1,8 @@
+.mat-card.mat-focus-indicator{  
+    background: #e1e5ec;
+}
+
+.mat-card.mat-focus-indicator .mat-form-field{
+    display:block;
+}
+

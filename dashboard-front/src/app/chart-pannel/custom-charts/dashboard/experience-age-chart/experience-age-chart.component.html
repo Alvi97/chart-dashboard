@@ -1,0 +1,17 @@
+<div>
+  <h2 class="chart-title">The experience based on employee's age</h2>
+
+    <div style="display: block" *ngIf="allData?.length != 0">
+      <canvas baseChart
+            [datasets]="barChartData"
+            [labels]="barChartLabels"
+            [options]="barChartOptions"
+            [legend]="barChartLegend"
+            [chartType]="barChartType"></canvas>
+    </div>
+
+    <div *ngIf="allData?.length == 0 ">
+      <h2 class="chart-title">Waiting for data...</h2>
+    </div>
+    
+  </div> 

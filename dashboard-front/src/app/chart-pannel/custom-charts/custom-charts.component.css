@@ -1,0 +1,34 @@
+p{
+    text-align: center;
+}
+
+
+.example-list {
+    max-width: 100%;
+    border: solid 1px #404040;
+    display: block;
+    overflow: hidden;
+  }
+
+  .example-box {
+    padding: 15px 10px;
+    border-bottom: solid 3px #141619;
+    color: white;
+    background-color: transparent;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    box-sizing: border-box;
+    cursor: pointer;
+    font-size: 14px;
+    background: #0e1012
+  }
+  
+  .example-box a{
+      color:white
+  }
+
+  .plus-icon{
+      font-size: 30px;
+  }

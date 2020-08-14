@@ -1,0 +1,42 @@
+<div class="row">
+
+
+  <app-create class="col-md-4"></app-create>
+  <div class="col-md-2 divider">
+    <h2 class="chart-title">Imediate Action
+      <button mat-raised-button color="warn" (click)="deleteAll()">Delete All People</button>
+    </h2>
+
+  </div>
+  <app-list class="col-md-6"></app-list>
+
+</div>
+<div class="row charts-section">
+
+  <div class="col-md-4 pie-chart" cdkDrag>
+    <h2 class="chart-title">The gender distribution in the company</h2>
+    <div *ngIf="peopleorigin.length == 0 ">
+      <h2 class="chart-title">Waiting for data...</h2>
+    </div>
+    <div style="display: block" *ngIf="peopleorigin.length > 0 ">
+      <canvas baseChart [data]="pieChartData" [labels]="pieChartLabels" [chartType]="pieChartType"
+        [plugins]="pieChartPlugins" [colors]="pieChartColors"> </canvas>
+    </div>
+  </div>
+  <div class="col-md-4 pie-chart" cdkDrag>
+
+    <app-gender-chart></app-gender-chart>
+
+
+  </div>
+
+
+  <div class="col-md-4 pie-chart" cdkDrag>
+
+
+    <app-experience-age-chart></app-experience-age-chart>
+
+
+  </div>
+
+</div>

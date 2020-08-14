@@ -1,0 +1,6 @@
+<h3 >Select a Graph with data fetched from Coronavirus API (TEST)</h3>
+<div cdkDropList class="example-list" (cdkDropListDropped)="drop($event)">
+    <div class="example-box" *ngFor="let model of models" cdkDrag routerLink="/{{model.path}}">
+        {{model.name}}
+    </div>
+  </div>
