@@ -27,6 +27,7 @@ import { DashboardComponent } from './chart-pannel/custom-charts/dashboard/dashb
 import { ListComponent } from './chart-pannel/custom-charts/dashboard/list/list.component';
 import { GenderChartComponent } from './chart-pannel/custom-charts/dashboard/gender-chart/gender-chart.component';
 import { ExperienceAgeChartComponent } from './chart-pannel/custom-charts/dashboard/experience-age-chart/experience-age-chart.component';
+import { GeoChartComponent } from './chart-pannel/custom-charts/dashboard/geo-chart/geo-chart.component';
 
 
 @NgModule({ 
@@ -41,7 +42,8 @@ import { ExperienceAgeChartComponent } from './chart-pannel/custom-charts/dashbo
     DashboardComponent,
     ListComponent,
     GenderChartComponent,
-    ExperienceAgeChartComponent
+    ExperienceAgeChartComponent,
+    GeoChartComponent
   ],
   imports: [
     BrowserModule,

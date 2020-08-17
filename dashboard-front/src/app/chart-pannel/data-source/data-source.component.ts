@@ -27,18 +27,10 @@ export class DataSourceComponent implements OnInit {
     new DataSourceModel("deathandrecovery" , "Death And Reovery rate compared with the total cases")
   ]
 
-  
 
   movies = [
     'Coronavirus',
-    'Episode II - Attack of the Clones',
-    'Episode III - Revenge of the Sith',
-    'Episode IV - A New Hope',
-    'Episode V - The Empire Strikes Back',
-    'Episode VI - Return of the Jedi',
-    'Episode VII - The Force Awakens',
-    'Episode VIII - The Last Jedi',
-    'Episode IX – The Rise of Skywalker'
+    'Coronavirus map',
   ];
 
   drop(event: CdkDragDrop<string[]>) {

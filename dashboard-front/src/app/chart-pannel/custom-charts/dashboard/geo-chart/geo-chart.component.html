@@ -1,0 +1,9 @@
+
+    <h2 class="chart-title">The geo distribution in the company</h2>
+    <div *ngIf="peopleorigin.length == 0 ">
+      <h2 class="chart-title">Waiting for data...</h2>
+    </div>
+    <div style="display: block" *ngIf="peopleorigin.length > 0 ">
+      <canvas baseChart [data]="pieChartData" [labels]="pieChartLabels" [chartType]="pieChartType"
+        [plugins]="pieChartPlugins" [colors]="pieChartColors"> </canvas>
+    </div>
